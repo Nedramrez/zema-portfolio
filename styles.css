@@ -240,7 +240,7 @@ body {
   margin: 6px 0;
 }
 
-.supporting-text > h4 {
+.supporting-text > h5 {
   /* LET’S CONNECT */
 
   position: static;
@@ -995,7 +995,7 @@ h4 {
   flex-grow: 0;
 }
 
-.primary-text-5 > hx {
+.primary-text-5 > h2 {
   /* Primary Text */
 
   position: static;
