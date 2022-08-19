@@ -1030,7 +1030,8 @@ h4 {
   width: 124px;
   height: 48px;
   top: 12px;
-  border: 1px solid #6070ff;
+  background-color: #fff;
+  border: 1px solid #7f8cff;
   box-sizing: border-box;
   border-radius: 8px;
 
