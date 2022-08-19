@@ -21,6 +21,8 @@
 
 I want to say thank you to all my learning partners, morning session and standup teams!
 
+https://github.com/Nedramrez/zema-portfolio/issues
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
