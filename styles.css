@@ -240,7 +240,7 @@ body {
   margin: 6px 0;
 }
 
-.supporting-text > span {
+.supporting-text > h4 {
   /* LET’S CONNECT */
 
   position: static;
