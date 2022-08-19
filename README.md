@@ -1,24 +1,27 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hello World
 
-> My first Microverse project.
+## Portfolio. Project 1 : setup and mobile version skeleton
+
+>  My first milestone in the process of creating my portfolio website.
 
 ## Built With
 
-- HTML, CSS
+-  HTML, CSS
 
 ## Authors
 
 👤 **Zermarden**
 
-- GitHub: [@nedramrez](https://github.com/nedramrez)
-- Twitter: [@zermarden](https://twitter.com/zermarden)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/zermarden)
+-  GitHub: [@Nedramrez](https://github.com/Nedramrez)
+-  Twitter: [@zermarden](https://twitter.com/zermarden)
+-  LinkedIn: [LinkedIn](https://linkedin.com/in/zermarden)
 
 ## 🤝 Contributing
 
-I want to say thank you to my learning partners, morning session and standup teams!
+I want to say thank you to all my learning partners, morning session and standup teams!
+
+https://github.com/Nedramrez/zema-portfolio/issues
 
 ## Show your support
 
@@ -30,4 +33,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt) licensed.
