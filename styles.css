@@ -400,7 +400,7 @@ body {
 
   flex: none;
   flex-grow: 0;
-  margin: 88px 0;
+  margin: 44px 0;
 }
 
 .snp-p-img {
@@ -995,7 +995,7 @@ h4 {
   flex-grow: 0;
 }
 
-.primary-text-5 > h1 {
+.primary-text-5 > hx {
   /* Primary Text */
 
   position: static;
