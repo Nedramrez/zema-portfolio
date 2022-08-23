@@ -76,6 +76,7 @@ h1 {
 
 article {
   background-color: #fff;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
   margin: 44px 24px;
 }
@@ -109,7 +110,7 @@ article ul li {
 
 article h5 {
   color: #344563;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 600;
@@ -163,4 +164,28 @@ article button {
   font-weight: 500;
   padding: 12px;
   margin: 24px 0 28px 16px;
+}
+
+.order-0 {
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.order-1 {
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.order-2 {
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.order-3 {
+  flex: none;
+  order: 3;
+  flex-grow: 0;
 }
