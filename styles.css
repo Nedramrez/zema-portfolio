@@ -1,10 +1,74 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background: #f7f7f9;;
 }
 
 .nav-menu {
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   padding: 14px 32px 14px 24px;
 }
 
+h1 {
+  color: #6070ff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.introduction {
+  background-color: #fff;
+  background-image: url(assets/bg.png);
+  background-position: 0 1rem;
+  background-repeat: no-repeat;
+  border-radius: 0 0 0 60px;
+}
+
+.introduction h2 {
+  color: #172b4d;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  padding: 114px 24px 12px;
+  width: 70%;
+}
+
+.introduction p {
+  color: #344563;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 24px 12px;
+}
+
+.introduction h3 {
+  color: #7f8cff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 24px 12px;
+}
+
+.introduction ul {
+  display: flex;
+  list-style: none;
+  padding: 0 24px 136px;
+}
+
+.introduction ul li {
+  padding: 0 20px 0 0;
+}
