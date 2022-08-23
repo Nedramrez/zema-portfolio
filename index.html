@@ -267,6 +267,9 @@
           <div class="solid"></div>
         </ul>
       </section>
+
+      <!--Contact Me Section-->
+
       <section class="contact-form">
         <div class="form-container">
           <div class="container1">
@@ -277,15 +280,12 @@
             </p>
           </div>
           <div class="container2">
-            <form action="" method="POST">
-              <input type="text" maxlength="30" placeholder="Email" required />
-              <input type="email" placeholder="Email address" required />
-              <textarea
-                maxlength="500"
-                placeholder="Enter your message here"
-                required
-              ></textarea>
-              <button type="submit">Get In Touch</button>
+            <form action="https://formspree.io/f/xgedddaq" method="POST">
+              <input type="text" name="name" maxlength="30" placeholder="Your name" required />
+              <input type="email" name="email" placeholder="Email address" required />
+              <textarea name="message" maxlength="500" placeholder="Enter your message here" required>
+              </textarea>
+              <input class="button" type="submit" value="Get In Touch">
             </form>
           </div>
         </div>

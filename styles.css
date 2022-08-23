@@ -177,28 +177,40 @@ button {
   margin: 24px 0 28px 16px;
 }
 
+.button {
+  background: #fff;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  color: #396df2;
+  font-size: 16.9px;
+  font-style: normal;
+  font-weight: 500;
+  height: 48px;
+  width: 140px;
+}
+
 .order-0 {
   flex: none;
-  order: 0;
   flex-grow: 0;
+  order: 0;
 }
 
 .order-1 {
   flex: none;
-  order: 1;
   flex-grow: 0;
+  order: 1;
 }
 
 .order-2 {
   flex: none;
-  order: 2;
   flex-grow: 0;
+  order: 2;
 }
 
 .order-3 {
   flex: none;
-  order: 3;
   flex-grow: 0;
+  order: 3;
 }
 
 .about {
@@ -289,7 +301,8 @@ button {
 }
 
 .container1 h2 {
-  font-family: "Poppins";
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -298,7 +311,8 @@ button {
 }
 
 .container1 p {
-  font-family: "Poppins";
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -313,7 +327,7 @@ button {
 }
 
 .container2 input[type="text"] {
-  margin-top: 87px;
+  margin-top: 60px;
 }
 
 form input {
@@ -342,4 +356,5 @@ form textarea {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
+  color: #b3bac5;
 }
