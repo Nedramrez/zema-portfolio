@@ -82,7 +82,7 @@ article p {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  padding: 3.2% 0 0 6.34% ;
+  padding: 3.2% 0 0 6.34%;
 }
 
 .social-media {
@@ -408,7 +408,7 @@ form textarea {
   .nav-list {
     display: flex;
     list-style: none;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -464,6 +464,7 @@ form textarea {
 
   .projects {
     display: grid;
+    margin: 4.99% 0;
   }
 
   .mobile {
@@ -568,18 +569,17 @@ form textarea {
     flex-direction: column;
     width: 42.15%;
   }
-  
+
   .about-h2 {
     padding: 25.353% 0 0 25.353%;
     font-size: 40px;
     line-height: 52px;
-    color: #091E42;
+    color: #091e42;
   }
 
   .about-text {
     color: #344563;
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
     font-style: normal;
     font-size: 20px;
     line-height: 28px;
@@ -587,17 +587,17 @@ form textarea {
   }
 
   .about-h4 {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #7F8CFF;
+    color: #7F8cff;
     padding: 2% 1% 0 25.353%;
   }
 
   .about-media {
-    padding: 2% 1% 0 27%;;
+    padding: 2% 1% 0 27%;
   }
 
   .about-button {
@@ -631,8 +631,4 @@ form textarea {
     padding: 0 11.97%;
   }
 
-  .contatiner2 
-  input[type="text"] {
-    margin-top: 1%;
-  }
 }
