@@ -608,6 +608,18 @@ form textarea {
     padding: 11.094% 11.094% 19% 2%;
   }
 
+  .lang-list {
+    display: flex;
+    flex-direction: row;
+    padding: 0 21px 0 0;
+  }
+
+  .lang-list li {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+
   .contact-form {
     background-image: url(assets/images/contact-form-background-image.svg);
     background-repeat: no-repeat;
