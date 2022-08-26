@@ -646,4 +646,34 @@ form textarea {
   .container1 p {
     padding: 0 11.97%;
   }
+
+  .heading h2{
+    position: relative;
+  }
+
+  .heading h2:first-child::after {
+    content: "";
+    position: absolute;
+    bottom: -5%;
+    left:38%;
+    transform: translatex(-50%);
+    background-color: #2230d2;
+    height: .3rem;
+    animation: expandLine 3s ease-in-out 2;
+  }
+
+  @keyframes expandLine {
+    from {
+      width: 0;
+    }
+
+    50% {
+      width: 75%;
+    }
+
+    to {
+      width: 0;
+    }
+    
+  }
 }
