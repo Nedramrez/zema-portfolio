@@ -647,7 +647,7 @@ form textarea {
     padding: 0 11.97%;
   }
 
-  .heading h2{
+  .heading h2 {
     position: relative;
   }
 
@@ -655,10 +655,10 @@ form textarea {
     content: "";
     position: absolute;
     bottom: -5%;
-    left:38%;
-    transform: translatex(-50%);
+    left: 38%;
+    transform: translateX(-50%);
     background-color: #2230d2;
-    height: .3rem;
+    height: 0.3rem;
     animation: expandLine 3s ease-in-out 2;
   }
 
@@ -674,6 +674,5 @@ form textarea {
     to {
       width: 0;
     }
-    
   }
 }
