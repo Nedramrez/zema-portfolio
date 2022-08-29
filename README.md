@@ -1,13 +1,17 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 
-## Portfolio. Project 1 : setup and mobile version skeleton
+## Portfolio: application deploy
 
->  My first milestone in the process of creating my portfolio website.
+>  Made my website available online.
 
 ## Built With
 
--  HTML, CSS
+-  HTML, CSS, JavaScript
+
+## Live Demo
+
+[Live Demo Link](https://nedramrez.github.io/zema-portfolio/)
 
 ## Authors
 
