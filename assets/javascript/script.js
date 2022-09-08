@@ -1,3 +1,4 @@
+//Script for "hamburger" icon
 const appearMobileMenu = document.querySelector(".mobile-menu");
 
 appearMobileMenu.addEventListener("click", mobileMenu);
@@ -13,7 +14,7 @@ function mobileMenu() {
   appearMobileDivision.appendChild(appearMobileDiv);
 
   const appearMobileImg = document.createElement("img");
-  appearMobileImg.classList.add("mobile-close-icon");
+  appearMobileImg.classList.add("mobile-menu-close-icon");
   appearMobileDiv.appendChild(appearMobileImg);
   appearMobileImg.setAttribute("src", "assets/images/close-icon.svg");
   appearMobileImg.setAttribute("onclick", "disappearMobileMenu()");
@@ -57,12 +58,11 @@ function mobileMenu() {
   MobileMenu.style.display = 'block';
 }
 
+//Script for the "mobile-menu-close" icon
+
 const disAppearMobileMenu = document.querySelector(".mobile-menu");
-
 disAppearMobileMenu.addEventListener("click", disappearMobileMenu);
-
-
 function disappearMobileMenu() {
-  const removeMobileMenu = document.getElementsById("rmv");
-  removeMobileMenu.remove;
+  const removeMobileMenu = document.getElementById("rmv");
+  removeMobileMenu.remove();
 }
