@@ -52,13 +52,13 @@ body {
 }
 
 .mobile-menu-close {
-  height: 10%;
-  width: 100%;
+  height: 17px;
+  width: 17px;
+  padding: 0 0 56px 85%;
 }
 
 .mobile-menu-close-icon {
-  padding: 5% 0 0 86%;
-  width: 21.5rem;
+  width: 17px;
 }
 
 h1 {
