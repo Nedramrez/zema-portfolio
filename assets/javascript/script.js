@@ -58,3 +58,12 @@ function mobileMenu() {
   const MobileMenu = document.getElementById('id-for-js');
   MobileMenu.style.display = 'block';
 }
+
+//Script for the "mobile-menu-close" icon - Samuel's commit
+
+const disAppearMobileMenu = document.querySelector(".mobile-menu");
+disAppearMobileMenu.addEventListener("click", disappearMobileMenu);
+function disappearMobileMenu() {
+  const removeMobileMenu = document.getElementById("rmv");
+  removeMobileMenu.remove();
+}
