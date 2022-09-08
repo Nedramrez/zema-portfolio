@@ -1,4 +1,5 @@
 //Script for "hamburger" icon
+
 const appearMobileMenu = document.querySelector(".mobile-menu");
 
 appearMobileMenu.addEventListener("click", mobileMenu);
@@ -56,13 +57,4 @@ function mobileMenu() {
 
   const MobileMenu = document.getElementById('id-for-js');
   MobileMenu.style.display = 'block';
-}
-
-//Script for the "mobile-menu-close" icon
-
-const disAppearMobileMenu = document.querySelector(".mobile-menu");
-disAppearMobileMenu.addEventListener("click", disappearMobileMenu);
-function disappearMobileMenu() {
-  const removeMobileMenu = document.getElementById("rmv");
-  removeMobileMenu.remove();
 }
