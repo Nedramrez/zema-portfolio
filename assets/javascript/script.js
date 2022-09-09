@@ -140,6 +140,16 @@ const tags = {
   javascript: 'javascript',
 };
 
+// eslint-disable-next-line no-unused-vars
+const detailsPp = function detailsPp() {
+  const x = document.getElementById('pp-details');
+  if (x.style.display === 'block') {
+    x.style.display = 'none';
+  } else {
+    x.style.display = 'block';
+  }
+};
+
 works.forEach(work => { // eslint-disable-line
   const portfolio = document.querySelector('#portfolio');
   const article = document.createElement('article');
@@ -206,12 +216,3 @@ works.forEach(work => { // eslint-disable-line
   button.setAttribute('onclick', 'detailsPp()');
   prDetails.appendChild(button);
 });
-
-const detailsPp = function (detail) {
-  const x = document.getElementById('pp-details');
-  if (x.style.display === 'block') {
-    x.style.display = 'none';
-  } else {
-    x.style.display = 'block';
-  }
-};
