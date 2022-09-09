@@ -206,3 +206,12 @@ works.forEach(work => { // eslint-disable-line
   button.setAttribute('onclick', 'detailsPp()');
   prDetails.appendChild(button);
 });
+
+const detailsPp = function (detail) {
+  const x = document.getElementById('pp-details');
+  if (x.style.display === 'block') {
+    x.style.display = 'none';
+  } else {
+    x.style.display = 'block';
+  }
+};
