@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script src="assets/javascript/script.js" defer></script>
   </head>
   <body>
     <!--DOM mobile menu-->
@@ -98,155 +99,7 @@
       <!--Projects Section-->
 
       <section class="projects" id="portfolio">
-        <article class="order-0">
-          <img 
-            class="project-img"
-            src="assets/images/d-snapshot-3.svg"
-            alt="shapshot-portfolio"/>
-            <div class="pr-details">
-              <h3>Tonic</h3>
-              <ul>
-                <li>
-                  <h5>CANOPY</h5>
-                </li>
-                <li>
-                  <img 
-                    class="counter" 
-                    src="assets/images/counter.svg" 
-                    alt="counter"/>
-                </li>
-                <li>
-                  <h6>Back End Dev</h6>
-                </li>
-                <li>
-                  <img 
-                    class="counter" 
-                    src="assets/images/counter.svg" 
-                    alt="counter"/>
-                </li>
-                <li>
-                  <h6>2015</h6>
-                </li>
-              </ul>
-              <p>
-                A daily selection of privately personalized reads; no accounts or sign-ups
-                required.
-              </p>
-              <ul class="tags">
-                <li>html</li>
-                <li>css</li>
-                <li>javaScript</li>
-              </ul>
-              <button>See Project</button>
-          </div>
-        </article>
 
-        <article class="order-1">
-          <img src="assets/images/snapshoot-portfolio.svg" alt="shapshot-portfolio" />
-          <div class="pr-details">
-            <h3>Multi-Post Stories</h3>
-            <ul>
-              <li>
-                <h5>CANOPY</h5>
-              </li>
-              <li>
-                <img class="counter" src="assets/images/counter.svg" alt="counter" />
-              </li>
-              <li>
-                <h6>Back End Dev</h6>
-              </li>
-              <li>
-                <img class="counter" src="assets/images/counter.svg" alt="counter" />
-              </li>
-              <li>
-                <h6>2015</h6>
-              </li>
-            </ul>
-            <p>
-              A daily selection of privately personalized reads; no accounts or sign-ups
-              required.
-            </p>
-            <ul class="tags">
-              <li>html</li>
-              <li>css</li>
-              <li>javaScript</li>
-            </ul>
-            <button>See Project</button>
-          </div>
-        </article>
-
-        <article class="order-2">
-          <img src="assets/images/snapshot-card-3.svg" alt="shapshot-portfolio" class="mobile"/>
-          <img 
-          class="project-img desktop"
-          src="assets/images/d-snapshot-1.svg"
-          alt="shapshot-portfolio"/>
-          <div class="pr-details">
-            <div class="pr-details">
-            <h3>Tonic</h3>
-            <ul>
-              <li>
-                <h5>CANOPY</h5>
-              </li>
-              <li>
-                <img class="counter" src="assets/images/counter.svg" alt="counter" />
-              </li>
-              <li>
-                <h6>Back End Dev</h6>
-              </li>
-              <li>
-                <img class="counter" src="assets/images/counter.svg" alt="counter" />
-              </li>
-              <li>
-                <span>2015</span>
-              </li>
-            </ul>
-            <p>
-              A daily selection of privately personalized reads; no accounts or sign-ups
-              required.
-            </p>
-            <ul class="tags">
-              <li>html</li>
-              <li>css</li>
-              <li>javaScript</li>
-            </ul>
-            <button>See Project</button>
-          </div>
-        </article>
-
-        <article class="order-3">
-          <img src="assets/images/snapshot-card-4.svg" alt="shapshot-portfolio" />
-          <div class="pr-details">
-            <h3>Multi-Post Stories</h3>
-            <ul>
-              <li>
-                <h5>CANOPY</h5>
-              </li>
-              <li>
-                <img class="counter" src="assets/images/counter.svg" alt="counter" />
-              </li>
-              <li>
-                <h6>Back End Dev</h6>
-              </li>
-              <li>
-                <img class="counter" src="assets/images/counter.svg" alt="counter" />
-              </li>
-              <li>
-                <span>2015</span>
-              </li>
-            </ul>
-            <p>
-              A daily selection of privately personalized reads; no accounts or sign-ups
-              required.
-            </p>
-            <ul class="tags">
-              <li>html</li>
-              <li>css</li>
-              <li>javaScript</li>
-            </ul>
-            <button>See Project</button>
-          </div>
-        </article>
       </section>
 
       <!--About myself Section-->
@@ -346,7 +199,63 @@
           </div>
         </div>
       </section>
+      <!--Details Popup Window 
+      (not displayed until you click "See project" button)-->
+      <div class="pp-details" id="pp-details">
+        <div class="pp-container">
+          <div class="pp-top-block">
+            <h2 class="pp-hdng">Tonic</h2>
+            <div class="mobMenu-close">
+              <button onclick="detailsPp()" class="close-button">&times;</button>
+            </div>
+          </div>
+          <img class="pp-img v-d" src="assets/images/d-snapshot-1.svg" alt="desktop-snapshot">
+          <img class="pp-img v-m" src="assets/images/d-snapshot-3.svg" alt="desktop-snapshot">
+          <div class="pp-btm-block">
+              <p class="pp-dscrptn v-m">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+              </p>
+              <p class="pp-dscrptn v-d">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
+              </p>
+              <div class="pp-flex">
+                <div class="tags pp-specs">
+                        <div class="tag-html pp-tag">
+                          <span>html</span>
+                        </div>
+                        <div class="tag-css pp-tag">
+                          <span>css</span>
+                        </div>
+                        <div class="tag-js pp-tag">
+                          <span>javaScript</span>
+                        </div>
+                        <div class="tag-html pp-tag v-d">
+                          <span>github</span>
+                        </div>
+                        <div class="tag-css pp-tag v-d">
+                          <span>ruby</span>
+                        </div>
+                        <div class="tag-js pp-tag v-d">
+                          <span>Bootstrap</span>
+                        </div>
+                </div>
+                <hr class="solid">
+                <div class="pp-btns">
+                  <div class="pp-btn">
+                    <a class="see" href="https://nedramrez.github.io/zema-portfolio">
+                        <div class="see-txt">See live</div>
+                        <img src="assets/images/blue-export.svg" alt="blue export button">
+                    </a>
+                    <a class="see" href="https://github.com/Nedramrez/portfolio">
+                        <div class="see-txt">See Source</div>
+                        <img src="assets/images/blue-github.svg" alt="blue-export-icon">
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
     </main>
-    <script src="assets/javascript/script.js"></script>
   </body>
 </html>
