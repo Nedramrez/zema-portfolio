@@ -862,7 +862,9 @@ form textarea {
     /* The Details Popup Window */
 
   .pp-container {
-    height: 90%;
+    height: 85%;
+    width: 85%;
+    padding: 1%;
   }
 
   .pp-details {
@@ -912,10 +914,8 @@ form textarea {
   }
 
   .pp-dscrptn {
-    padding-bottom: 2%;
-    overflow: visible;
-    height: 100%;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    padding: 0 10px 0 0;
   }
 
   .pp-btm-block {
@@ -928,7 +928,7 @@ form textarea {
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 32%;
+    width: 35%;
     padding-bottom: 5%;
   }
 
@@ -941,6 +941,7 @@ form textarea {
 
   .pp-tag {
     margin: 5% 1.5%;
+    font-size: 0.5rem;
   }
 
   .pp-btns {
