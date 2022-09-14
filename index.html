@@ -12,9 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <script src="assets/javascript/script.js" defer></script>
+
   </head>
-  <body>
+  <body id="telo">
     <!--DOM mobile menu-->
     <div class="mobile-menu" id="id-for-js">
 
@@ -199,63 +199,143 @@
           </div>
         </div>
       </section>
-      <!--Details Popup Window 
-      (not displayed until you click "See project" button)-->
-      <div class="pp-details" id="pp-details">
-        <div class="pp-container">
-          <div class="pp-top-block">
-            <h2 class="pp-hdng">Tonic</h2>
-            <div class="mobMenu-close">
-              <button onclick="detailsPp()" class="close-button">&times;</button>
+      <section id="work"></section>
+      <section id="popup">
+        <div id="content">
+          <div id="title">
+            <h2>headings</h2>
+            <div class="close-btn">&times;</div>
+          </div>
+          <p class="proj-info">
+            <span class="proj-company">CANOPY</span>
+            <span><img src="assets/images/counter.svg" alt=" " /></span>
+            <span class="proj-type"></span>
+            <span><img src="assets/images/counter.svg" alt=" " /></span>
+            <span class="proj-year"></span>
+          </p>
+          <img id="pop-img" src="./assets/" alt="project screenshot" />
+          <div id="details">
+            <p id="pop-description"></p>
+            <div id="popup-skills-buttons">
+              <div id="buttons">
+                <a
+                  class="enabled-btn live-link"
+                  target="_blank"
+                  rel="noopener"
+                  href=""
+                  >See Live<i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a
+                  class="enabled-btn source-link"
+                  target="_blank"
+                  rel="noopener"
+                  href=""
+                  >See Source<i class="fa-brands fa-github"></i
+                ></a>
+              </div>
             </div>
           </div>
-          <img class="pp-img v-d" src="assets/images/d-snapshot-1.svg" alt="desktop-snapshot">
-          <img class="pp-img v-m" src="assets/images/d-snapshot-3.svg" alt="desktop-snapshot">
-          <div class="pp-btm-block">
-              <p class="pp-dscrptn v-m">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
-              </p>
-              <p class="pp-dscrptn v-d">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
-              </p>
-              <div class="pp-flex">
-                <div class="tags pp-specs">
-                        <div class="tag-html pp-tag">
-                          <span>html</span>
-                        </div>
-                        <div class="tag-css pp-tag">
-                          <span>css</span>
-                        </div>
-                        <div class="tag-js pp-tag">
-                          <span>javaScript</span>
-                        </div>
-                        <div class="tag-html pp-tag v-d">
-                          <span>github</span>
-                        </div>
-                        <div class="tag-css pp-tag v-d">
-                          <span>ruby</span>
-                        </div>
-                        <div class="tag-js pp-tag v-d">
-                          <span>Bootstrap</span>
-                        </div>
-                </div>
-                <hr class="solid">
-                <div class="pp-btns">
-                  <div class="pp-btn">
-                    <a class="see" href="https://nedramrez.github.io/zema-portfolio">
-                        <div class="see-txt">See live</div>
-                        <img src="assets/images/blue-export.svg" alt="blue export button">
-                    </a>
-                    <a class="see" href="https://github.com/Nedramrez/portfolio">
-                        <div class="see-txt">See Source</div>
-                        <img src="assets/images/blue-github.svg" alt="blue-export-icon">
-                    </a>
-                  </div>
-                </div>
-              </div>
-          </div>
         </div>
-      </div>
+      </section>
+      <div id="popbg"></div>
+      <section id="about">
+        <div id="intro">
+          <h2 class="header">
+            About <br />
+            Myself
+          </h2>
+          <p class="description">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If you
+            like what you see and have a project you need coded, don’t hestiate to
+            contact me.
+          </p>
+          <h2 class="connect">LET’S CONNECT</h2>
+          <ul class="social-links">
+            <li>
+              <a
+                href="https://twitter.com/Natanim_?t=qAC9kcrqr6RLORU148jXFw&s=09"
+                target="_blank"
+                rel="noopener"
+                class="social-media-link"
+              >
+                <i class="fa-brands fa-twitter fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/natanim-abesha-04a39823a"
+                target="_blank"
+                rel="noopener"
+                class="social-media-link"
+                ><i class="fa-brands fa-linkedin fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/NatanimA"
+                target="_blank"
+                rel="noopener"
+                class="social-media-link"
+                ><i class="fa-brands fa-github fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.hackerrank.com/natanimabesha"
+                target="_blank"
+                rel="noopener"
+                class="social-media-link"
+                ><i class="fa-brands fa-hackerrank fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+          <button class="enabled-btn">Get my resume</button>
+        </div>
+        <div id="skills-container">
+          <ul>
+            <li class="skill">
+              <span>Languages</span>
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+            </li>
+            <li>
+              <ul class="skill-lang">
+                <li class="lang">
+                  <img
+                    class="lang-logo"
+                    src="assets/images/javascript.svg"
+                    alt="javaScript logo"
+                  />JavaScript
+                </li>
+                <li class="lang">
+                  <img
+                    class="lang-logo"
+                    src="assets/images/HTML-5.svg"
+                    alt="html logo"
+                  />HTML
+                </li>
+                <li class="lang">
+                  <img
+                    class="lang-logo"
+                    src="assets/images/CSS-3.svg"
+                    alt="css logo"
+                  />CSS
+                </li>
+              </ul>
+            </li>
+            <li class="skill">
+              <span>Frameworks</span>
+              <span><i class="fa-solid fa-chevron-right"></i></span>
+            </li>
+            <li class="skill">
+              <span>Skills</span>
+              <span><i class="fa-solid fa-chevron-right"></i></span>
+            </li>
+          </ul>
+        </div>
+      </section>
+  
     </main>
+    <script src="assets/javascript/script.js" defer></script>
   </body>
 </html>

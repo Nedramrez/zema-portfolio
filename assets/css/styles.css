@@ -10,6 +10,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .nav-menu {
   background-color: #fff;
   display: flex;
@@ -287,6 +291,10 @@ button:active {
   order: 3;
 }
 
+#pp-details {
+  display: none;
+} 
+
 .about {
   background-image: none;
   border-radius: 0 60px 0 0;
@@ -339,10 +347,6 @@ button:active {
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
-}
-
-.see img {
-  padding-left: 10px;
 }
 
 .lang-list li img {
@@ -438,137 +442,6 @@ form textarea {
   font-size: 15px;
   line-height: 24px;
   color: #b3bac5;
-}
-
-/* The Details Popup */
-
-#pp-details {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.pp-container {
-  background-color: white;
-  width: 80%;
-  height: 88%;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 16px;
-  padding: 5%;
-}
-
-.pp-top-block {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 0 5% 0;
-}
-
-.pp-hdng {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-}
-
-.close-button {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 1.25rem;
-  font-weight: bold;
-  align-self: center;
-  margin: 0;
-}
-
-.pp-img-cont {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.pp-img {
-  justify-content: center;
-  align-items: center;
-  padding: 0 0 5% 0;
-  max-height: 400px;
-}
-
-.pp-dscrptn {
-  padding-bottom: 2%;
-  overflow: visible;
-  font-size: 0.8rem;
-}
-
-.pp-btm-block {
-  display: flex;
-  flex-direction: column;
-}
-
-.pp-flex {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.pp-tag {
-  background: #ebebff;
-  border-radius: 8px;
-  color: #6070ff;
-  margin: 0 8px 0 0;
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  height: 16px;
-  padding: 4px 12px;
-}
-
-.pp-specs {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 250px;
-}
-
-.pp-btns {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.pp-btn {
-  display: flex;
-  justify-content: space-between;
-}
-
-.see {
-  margin-top: 5%;
-  display: flex;
-  align-items: center;
-  padding: 0 10px 0 10px;
-  border: 1px solid #6070ff;
-  box-sizing: border-box;
-  border-radius: 8px;
-  height: 48px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #0c3fc0;
-  margin-right: 5px;
 }
 
 .v-d {
@@ -738,6 +611,10 @@ form textarea {
     margin: 8.076% 4.06%;
   }
 
+  #pp-details {
+    display: none;
+  } 
+
   .about div {
     border-radius: 0 7% 0 0;
     width: 100%;
@@ -857,122 +734,6 @@ form textarea {
     to {
       width: 0;
     }
-  }
-
-  /* The Details Popup Window */
-
-  .pp-container {
-    height: 85%;
-    width: 85%;
-    padding: 1%;
-  }
-
-  .pp-details {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  .pp-top-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .pp-hdng {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-  }
-
-  .close-button {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 1.25rem;
-    font-weight: bold;
-    align-self: center;
-  }
-
-  .pp-img-cont {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .pp-img {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .pp-dscrptn {
-    font-size: 0.6rem;
-    padding: 0 10px 0 0;
-  }
-
-  .pp-btm-block {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .pp-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    width: 35%;
-    padding-bottom: 5%;
-  }
-
-  .pp-specs {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 250px;
-  }
-
-  .pp-tag {
-    margin: 5% 1.5%;
-    font-size: 0.5rem;
-  }
-
-  .pp-btns {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .pp-btn {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .see {
-    margin-top: 5%;
-    display: flex;
-    align-items: center;
-    padding: 0 10px 0 10px;
-    border: 1px solid #6070ff;
-    box-sizing: border-box;
-    border-radius: 8px;
-    height: 48px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 0.6rem;
-    line-height: 20px;
-    color: #0c3fc0;
-  }
-
-  .see img {
-    padding-left: 5px;
   }
 
   .v-d {
