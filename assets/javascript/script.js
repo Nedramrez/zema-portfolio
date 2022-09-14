@@ -5,6 +5,8 @@ const disAppearMobileMenuAbout = document.querySelector('.mobile-menu');
 const disAppearMobileMenuContact = document.querySelector('.mobile-menu');
 
 function mobileMenu() {
+  const navMenuDelProp = document.getElementById('nav-menu');
+  navMenuDelProp.style.display = 'none';
   const appearMobileDivision = document.createElement('div');
   appearMobileDivision.classList.add('mobile-menu-div');
   appearMobileDivision.setAttribute('id', 'rmv');
@@ -32,7 +34,7 @@ function mobileMenu() {
   const appearMobileLink1 = document.createElement('a');
   appearMobileLink1.classList.add('mobile-link');
   appearMobileUlLi1.appendChild(appearMobileLink1);
-  appearMobileLink1.setAttribute('href', '#Portfolio');
+  appearMobileLink1.setAttribute('href', '#portfolio');
   appearMobileLink1.textContent = 'Portfolio';
   appearMobileLink1.setAttribute('onclick', 'disappearMobileMenuPortfolio()');
 
@@ -43,7 +45,7 @@ function mobileMenu() {
   const appearMobileLink2 = document.createElement('a');
   appearMobileLink2.classList.add('mobile-link');
   appearMobileUlLi2.appendChild(appearMobileLink2);
-  appearMobileLink2.setAttribute('href', '#About');
+  appearMobileLink2.setAttribute('href', '#about-me');
   appearMobileLink2.textContent = 'About';
   appearMobileLink1.setAttribute('onclick', 'disappearMobileMenuAbout()');
 
@@ -54,7 +56,7 @@ function mobileMenu() {
   const appearMobileLink3 = document.createElement('a');
   appearMobileLink3.classList.add('mobile-link');
   appearMobileUlLi3.appendChild(appearMobileLink3);
-  appearMobileLink3.setAttribute('href', '#Contact');
+  appearMobileLink3.setAttribute('href', '#contact');
   appearMobileLink3.textContent = 'Contact';
   appearMobileLink1.setAttribute('onclick', 'disappearMobileMenuContact()');
 
@@ -71,21 +73,23 @@ appearMobileMenu.addEventListener('click', mobileMenu);
 function disappearMobileMenu() {
   const removeMobileMenu = document.getElementById('rmv');
   removeMobileMenu.remove();
+  const navMenuDelProp = document.getElementById('nav-menu');
+  navMenuDelProp.style.display = 'flex';
 }
 
 function disappearMobileMenuPortfolio() {
   disappearMobileMenu();
-  window.open('../#contact', '_self');
+  window.open('../#portfolio', '_self');
 }
 
 function disappearMobileMenuAbout() {
   disappearMobileMenu();
-  window.open('../#about', '_self');
+  window.open('../#about-me', '_self');
 }
 
 function disappearMobileMenuContact() {
   disappearMobileMenu();
-  window.open('../#portfolio', '_self');
+  window.open('../#contact', '_self');
 }
 
 disAppearMobileMenu.addEventListener('click', disappearMobileMenu);
