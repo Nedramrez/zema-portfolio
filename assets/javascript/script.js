@@ -5,6 +5,8 @@ const disAppearMobileMenuAbout = document.querySelector('.mobile-menu');
 const disAppearMobileMenuContact = document.querySelector('.mobile-menu');
 
 function mobileMenu() {
+  const navMenuDelProp = document.getElementById('nav-menu');
+  navMenuDelProp.style.display = 'none';
   const appearMobileDivision = document.createElement('div');
   appearMobileDivision.classList.add('mobile-menu-div');
   appearMobileDivision.setAttribute('id', 'rmv');
@@ -71,6 +73,8 @@ appearMobileMenu.addEventListener('click', mobileMenu);
 function disappearMobileMenu() {
   const removeMobileMenu = document.getElementById('rmv');
   removeMobileMenu.remove();
+  const navMenuDelProp = document.getElementById('nav-menu');
+  navMenuDelProp.style.display = 'flex';
 }
 
 function disappearMobileMenuPortfolio() {

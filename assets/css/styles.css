@@ -9,7 +9,7 @@ body {
   box-sizing: border-box;
 }
 
-.nav-menu {
+#nav-menu {
   position: fixed;
   width: 100vw;
   background-color: #fff;
@@ -442,7 +442,7 @@ form textarea {
     padding: 26px 0 0 10%;
   }
 
-  .nav-menu a {
+  #nav-menu a {
     display: none;
   }
 
