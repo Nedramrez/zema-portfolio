@@ -106,6 +106,7 @@ const works = [
     see: 'https://nedramrez.github.io/portfolio',
     repo: 'https://github.com/nedramrez/portfolio',
     order: 0,
+    id: 'id-0',
   },
   {
     title: 'Multi-post stories',
@@ -113,6 +114,7 @@ const works = [
     see: 'https://nedramrez.github.io/portfolio',
     repo: 'https://github.com/nedramrez/portfolio',
     order: 1,
+    id: 'id-1',
   },
   {
     title: 'Tonic',
@@ -120,6 +122,7 @@ const works = [
     see: 'https://nedramrez.github.io/portfolio',
     repo: 'https://github.com/nedramrez/portfolio',
     order: 2,
+    id: 'id-2',
   },
   {
     title: 'Multi-post stories',
@@ -127,6 +130,7 @@ const works = [
     see: 'https://nedramrez.github.io/portfolio',
     repo: 'https://github.com/nedramrez/portfolio',
     order: 3,
+    id: 'id-3',
   },
 ];
 
@@ -144,83 +148,11 @@ const tags = {
   javascript: 'javascript',
 };
 
-function detailsPp() {
-  const orderNum = works.order;
-  for (let i = 0; i < works.length; i += 1) {
-    if (i === orderNum) {
-      works.includes(orderNum);
-      const portfolio = document.querySelector('#portfolio');
-      const article = document.createElement('article');
-      article.classList.add(works.includes(orderNum).order);
-      portfolio.appendChild(article);
-      const snapshot = document.createElement('img');
-      article.appendChild(snapshot);
-      snapshot.classList.add('project-img');
-      snapshot.setAttribute('src', works.image);
-      const prDetails = document.createElement('div');
-      article.appendChild(prDetails);
-      prDetails.classList.add('pr-details');
-      const title = document.createElement('h3');
-      prDetails.appendChild(title);
-      title.innerText = works.title;
-      const listDetails = document.createElement('ul');
-      prDetails.appendChild(listDetails);
-      const lineDetail1 = document.createElement('li');
-      listDetails.appendChild(lineDetail1);
-      const client = document.createElement('h5');
-      client.innerText = details.client;
-      lineDetail1.appendChild(client);
-      const lineDetail2 = document.createElement('li');
-      listDetails.appendChild(lineDetail2);
-      const counter = document.createElement('img');
-      counter.setAttribute('src', details.counter);
-      counter.setAttribute('class', 'counter');
-      counter.setAttribute('alt', 'counter');
-      lineDetail2.appendChild(counter);
-      const lineDetail3 = document.createElement('li');
-      listDetails.appendChild(lineDetail3);
-      const role = document.createElement('h6');
-      role.innerText = details.role;
-      lineDetail3.appendChild(role);
-      const lineDetail4 = document.createElement('li');
-      listDetails.appendChild(lineDetail4);
-      const counter2 = document.createElement('img');
-      counter2.setAttribute('src', details.counter);
-      counter.setAttribute('class', 'counter');
-      counter.setAttribute('alt', 'counter');
-      lineDetail4.appendChild(counter2);
-      const lineDetail5 = document.createElement('li');
-      listDetails.appendChild(lineDetail5);
-      const year = document.createElement('h6');
-      year.innerText = details.year;
-      lineDetail5.appendChild(year);
-      const description = document.createElement('p');
-      description.innerText = details.description;
-      prDetails.appendChild(description);
-      const tagsList = document.createElement('ul');
-      tagsList.classList.add('tags');
-      prDetails.appendChild(tagsList);
-      const lineTag1 = document.createElement('li');
-      lineTag1.innerText = tags.html;
-      tagsList.appendChild(lineTag1);
-      const lineTag2 = document.createElement('li');
-      lineTag2.innerText = tags.css;
-      tagsList.appendChild(lineTag2);
-      const lineTag3 = document.createElement('li');
-      lineTag3.innerText = tags.javascript;
-      tagsList.appendChild(lineTag3);
-      const button = document.createElement('button');
-      button.innerText = 'See Project';
-      button.setAttribute('id', 'see-project');
-      button.setAttribute('onclick', 'detailsPp()');
-    }
-  }
-}
-
-works.forEach(work => { // eslint-disable-line
+works.forEach((work) => {
   const portfolio = document.querySelector('#portfolio');
   const article = document.createElement('article');
-  article.classList.add(`order-${work.order}`);
+  article.setAttribute('order', work.order);
+  article.setAttribute('id', 'project');
   portfolio.appendChild(article);
   const snapshot = document.createElement('img');
   article.appendChild(snapshot);
@@ -280,9 +212,11 @@ works.forEach(work => { // eslint-disable-line
   tagsList.appendChild(lineTag3);
   const button = document.createElement('button');
   button.innerText = 'See Project';
+  button.setAttribute('title', `id-${work.order}`);
   button.setAttribute('id', 'see-project');
   prDetails.appendChild(button);
 });
 
-const seeProject = document.querySelector('#see-project');
-seeProject.addEventListener('click', detailsPp);
+works.forEach(ppWork => {
+
+});

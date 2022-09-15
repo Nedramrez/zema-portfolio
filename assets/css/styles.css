@@ -480,6 +480,10 @@ form textarea {
   display: block;
 }
 
+.popup-window {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   h1 {
     padding: 26px 0 0 10%;
@@ -769,6 +773,10 @@ form textarea {
   }
 
   .v-m {
+    display: none;
+  }
+
+  .popup-window {
     display: none;
   }
 }
