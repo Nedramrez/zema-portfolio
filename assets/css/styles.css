@@ -1,4 +1,4 @@
-* {
+*, *::after, *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -482,6 +482,128 @@ form textarea {
 
 .popup-window {
   display: none;
+}
+
+.pp-details {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.pp-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background-color: #fff;
+  z-index: 10;
+  width: 343px;
+  max-width: 91,5%;
+  overflow-y: scroll;
+}
+
+.pp-top-block {
+  display: flex;
+  padding: 12px 16px;
+}
+
+.pp-close {
+  display: flex;
+  align-items: center;
+}
+
+.pp-close-icon {
+  height: 30px;
+}
+
+.pp-hdng {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 44px;
+  height: 40px;
+}
+
+.pp-ul {
+  display: flex;
+  list-style: none;
+  padding: 0 0 0 16px;
+  align-items: center;
+}
+
+
+.pp-ul h5 {
+  color: #344563;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.pp-ul li img {
+  padding: 0 6px;
+}
+
+.pp-ul h6 {
+  color: #7a869a;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.pp-img {
+  padding: 12px 16px;
+}
+
+.pp-dscrptn {
+  padding: 0 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.pp-tags {
+  display: flex;
+  list-style: none;
+  padding: 12px 16px;
+}
+
+.pp-tags li {
+  background: #ebebff;
+  border-radius: 8px;
+  color: #6070ff;
+  margin: 0 8px 0 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  height: 24px;
+  padding: 4px 12px;
+}
+
+.pp-btns {
+  display: flex;
+  padding: 0 16px;  
+}
+
+.pp-btn {
+  display: flex;
+}
+
+.pp-btn-image {
+  padding-left: 5px ;
 }
 
 @media screen and (min-width: 768px) {
