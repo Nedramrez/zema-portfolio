@@ -102,35 +102,43 @@ disAppearMobileMenuContact.addEventListener('click', disappearMobileMenuContact)
 const works = [
   {
     title: 'Tonic',
-    image: 'assets/images/d-snapshot-3.svg',
+    image: 'assets/images/tonic.svg',
+    imageD: 'assets/images/d-snapshot-3.svg',
     see: 'https://nedramrez.github.io/portfolio',
     repo: 'https://github.com/nedramrez/portfolio',
     order: 0,
-    id: 'id-0',
+    orderInside1: 'order-1',
+    orderInside2: 'order-2',
   },
   {
     title: 'Multi-post stories',
     image: 'assets/images/snapshoot-portfolio.svg',
+    imageD: 'assets/images/d-snapshot-2.svg',
     see: 'https://nedramrez.github.io/portfolio',
     repo: 'https://github.com/nedramrez/portfolio',
     order: 1,
-    id: 'id-1',
+    orderInside1: 'order-2',
+    orderInside2: 'order-1',
   },
   {
     title: 'Tonic',
     image: 'assets/images/snapshot-card-3.svg',
+    imageD: 'assets/images/d-snapshot-1.svg',
     see: 'https://nedramrez.github.io/portfolio',
     repo: 'https://github.com/nedramrez/portfolio',
     order: 2,
-    id: 'id-2',
+    orderInside1: 'order-1',
+    orderInside2: 'order-2',
   },
   {
     title: 'Multi-post stories',
     image: 'assets/images/snapshot-card-4.svg',
+    imageD: 'assets/images/snapshot-card-4.svg',
     see: 'https://nedramrez.github.io/portfolio',
     repo: 'https://github.com/nedramrez/portfolio',
     order: 3,
-    id: 'id-3',
+    orderInside1: 'order-2',
+    orderInside2: 'order-1',
   },
 ];
 
@@ -140,6 +148,8 @@ const details = {
   counter: 'assets/images/counter.svg',
   year: '2015',
   description: 'This represents my expertise in Backend development.',
+  ppDscrptnD: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non eum ex magni perspiciatis, praesentium quidem nemo officiis quas et quae esse voluptatum, minima asperiores perferendis repellat sint quaerat expedita quia!  Sunt assumenda mollitia perspiciatis accusantium illum sapiente soluta praesentium dolor ipsum debitis fugiat, doloribus blanditiis quo ut repellendus corrupti, nobis rem voluptas! Quod aut atque officiis hic esse cumque ad!',
+  ppDscrptnM: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
 };
 
 const tags = {
@@ -151,16 +161,21 @@ const tags = {
 works.forEach((work) => {
   const portfolio = document.querySelector('#portfolio');
   const article = document.createElement('article');
-  article.setAttribute('order', work.order);
+  article.setAttribute('class', `order-${work.order}`);
   article.setAttribute('id', 'project');
   portfolio.appendChild(article);
   const snapshot = document.createElement('img');
   article.appendChild(snapshot);
-  snapshot.classList.add('project-img');
+  snapshot.classList.add('mobile');
   snapshot.setAttribute('src', work.image);
+  const desktop = document.createElement('img');
+  article.appendChild(desktop);
+  desktop.setAttribute('src', work.imageD);
+  desktop.setAttribute('class', `project-img desktop ${work.orderInside2}`);
   const prDetails = document.createElement('div');
   article.appendChild(prDetails);
   prDetails.classList.add('pr-details');
+  prDetails.setAttribute('class', `pr-details ${work.orderInside1}`);
   const title = document.createElement('h3');
   prDetails.appendChild(title);
   title.innerText = work.title;
@@ -217,6 +232,102 @@ works.forEach((work) => {
   prDetails.appendChild(button);
 });
 
-works.forEach(ppWork => {
-
+works.forEach((ppWork) => {
+  const ppWindow = document.querySelector('#popup-window');
+  ppWindow.setAttribute('class', 'pp-details');
+  const ppContainer = document.createElement('div');
+  ppContainer.setAttribute('class', `order-${ppWork.order} pp-container`);
+  ppWindow.appendChild(ppContainer);
+  const ppTopBlock = document.createElement('div');
+  ppTopBlock.classList.add('pp-top-block');
+  ppContainer.appendChild(ppTopBlock);
+  const ppHdng = document.createElement('h2');
+  ppHdng.classList.add('pp-hdng');
+  ppHdng.innerText = `${ppWork.title}`;
+  ppTopBlock.appendChild(ppHdng);
+  const mobMenuClose = document.createElement('div');
+  mobMenuClose.classList.add('mobMenu-close');
+  mobMenuClose.innerHTML = '&times;';
+  ppTopBlock.appendChild(mobMenuClose);
+  const listDetails = document.createElement('ul');
+  ppTopBlock.appendChild(listDetails);
+  const lineDetail1 = document.createElement('li');
+  listDetails.appendChild(lineDetail1);
+  const client = document.createElement('h5');
+  client.innerText = details.client;
+  lineDetail1.appendChild(client);
+  const lineDetail2 = document.createElement('li');
+  listDetails.appendChild(lineDetail2);
+  const counter = document.createElement('img');
+  counter.setAttribute('src', details.counter);
+  counter.setAttribute('class', 'counter');
+  counter.setAttribute('alt', 'counter');
+  lineDetail2.appendChild(counter);
+  const lineDetail3 = document.createElement('li');
+  listDetails.appendChild(lineDetail3);
+  const role = document.createElement('h6');
+  role.innerText = details.role;
+  lineDetail3.appendChild(role);
+  const lineDetail4 = document.createElement('li');
+  listDetails.appendChild(lineDetail4);
+  const counter2 = document.createElement('img');
+  counter2.setAttribute('src', details.counter);
+  counter.setAttribute('class', 'counter');
+  counter.setAttribute('alt', 'counter');
+  lineDetail4.appendChild(counter2);
+  const lineDetail5 = document.createElement('li');
+  listDetails.appendChild(lineDetail5);
+  const year = document.createElement('h6');
+  year.innerText = details.year;
+  lineDetail5.appendChild(year);
+  const snapshot = document.createElement('img');
+  ppContainer.appendChild(snapshot);
+  snapshot.classList.add('pp-img', 'mobile');
+  snapshot.setAttribute('src', `${ppWork.image}`);
+  const desktop = document.createElement('img');
+  ppContainer.appendChild(desktop);
+  desktop.setAttribute('src', ppWork.imageD);
+  desktop.setAttribute('class', 'pp-img desktop');
+  const ppBtmBlock = document.createElement('div');
+  ppBtmBlock.classList.add('pp-btm-block');
+  ppContainer.appendChild(ppBtmBlock);
+  const ppDscrptnD = document.createElement('p');
+  ppDscrptnD.innerText = details.ppDscrptnD;
+  ppDscrptnD.classList.add('pp-dscrptn', 'desktop');
+  ppBtmBlock.appendChild(ppDscrptnD);
+  const ppDscrptnM = document.createElement('p');
+  ppDscrptnM.innerText = details.ppDscrptnM;
+  ppDscrptnM.classList.add('pp-dscrptn', 'mobile');
+  ppBtmBlock.appendChild(ppDscrptnM);
+  const tagsList = document.createElement('ul');
+  tagsList.classList.add('tags');
+  ppBtmBlock.appendChild(tagsList);
+  const lineTag1 = document.createElement('li');
+  lineTag1.innerText = tags.html;
+  tagsList.appendChild(lineTag1);
+  const lineTag2 = document.createElement('li');
+  lineTag2.innerText = tags.css;
+  tagsList.appendChild(lineTag2);
+  const lineTag3 = document.createElement('li');
+  lineTag3.innerText = tags.javascript;
+  tagsList.appendChild(lineTag3);
+  const ppBtn = document.createElement('div');
+  ppBtn.classList.add('pp-btn');
+  ppBtmBlock.appendChild(ppBtn);
+  const button = document.createElement('button');
+  button.innerText = 'See Live';
+  button.setAttribute('class', `btn-${ppWork.order}`);
+  button.setAttribute('id', 'see-project');
+  const ppBtnImg1 = document.createElement('img');
+  ppBtnImg1.setAttribute('src', 'assets/images/blue-export.svg');
+  ppBtn.appendChild(button);
+  button.appendChild(ppBtnImg1);
+  const button2 = document.createElement('button');
+  button2.innerText = 'See Source';
+  button2.setAttribute('class', `btn-${ppWork.order}`);
+  button2.setAttribute('id', 'see-project');
+  const ppBtnImg2 = document.createElement('img');
+  ppBtnImg2.setAttribute('src', 'assets/images/blue-github.svg');
+  ppBtn.appendChild(button2);
+  button2.appendChild(ppBtnImg2);
 });
