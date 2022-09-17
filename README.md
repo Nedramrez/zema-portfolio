@@ -21,6 +21,10 @@
 -  Twitter: [@zermarden](https://twitter.com/zermarden)
 -  LinkedIn: [LinkedIn](https://linkedin.com/in/zermarden)
 
+Samuel Moiwa
+Dave Zagabe
+Joel Kugonza
+
 ## 🤝 Contributing
 
 I want to say thank you to all my learning partners, morning session and standup teams!
