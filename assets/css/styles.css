@@ -166,6 +166,18 @@ article ul li {
   padding: 4px 12px;
 }
 
+.pp-tags li {
+  background: #ebebff;
+  border-radius: 8px;
+  color: #6070ff;
+  margin: 0 8px 0 0;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  height: 24px;
+  padding: 4px 12px;
+}
+
 .introduction ul li {
   padding: 0 20px 0 0;
 }
@@ -515,8 +527,7 @@ form textarea {
   background-color: #fff;
   z-index: 10;
   width: 343px;
-  /* height: 95%; */
-  max-width: 91, 5%;
+  max-width: 91.5%;
   overflow-y: scroll;
 }
 
@@ -586,18 +597,6 @@ form textarea {
   display: flex;
   list-style: none;
   padding: 12px 16px;
-}
-
-.pp-tags li {
-  background: #ebebff;
-  border-radius: 8px;
-  color: #6070ff;
-  margin: 0 8px 0 0;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  height: 24px;
-  padding: 4px 12px;
 }
 
 .pp-btns {
