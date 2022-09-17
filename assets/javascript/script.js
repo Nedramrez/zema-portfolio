@@ -227,8 +227,8 @@ works.forEach((work) => {
   tagsList.appendChild(lineTag3);
   const button = document.createElement('button');
   button.innerText = 'See Project';
-  button.setAttribute('title', `id-${work.order}`);
-  button.setAttribute('id', 'see-project');
+  button.setAttribute('id', `id-${work.order}`);
+  button.setAttribute('onclick', `appearPopup${work.order}`);
   prDetails.appendChild(button);
 });
 
@@ -237,6 +237,7 @@ works.forEach((ppWork) => {
   ppWindow.setAttribute('class', 'pp-details');
   const ppContainer = document.createElement('div');
   ppContainer.setAttribute('class', `order-${ppWork.order} pp-container`);
+  ppContainer.setAttribute('id', `pp-${ppWork.order}`);
   ppWindow.appendChild(ppContainer);
   const ppTopBlock = document.createElement('div');
   ppTopBlock.classList.add('pp-top-block');
@@ -250,6 +251,8 @@ works.forEach((ppWork) => {
   const ppCloseIcon = document.createElement('img');
   ppCloseIcon.classList.add('pp-close-icon');
   ppCloseIcon.setAttribute('src', 'assets/images/icon-close.svg');
+  ppCloseIcon.setAttribute('onclick', 'disappearPopup()');
+  ppCloseIcon.setAttribute('id', 'pp-close-icon');
   ppClose.appendChild(ppCloseIcon);
   ppTopBlock.appendChild(ppClose);
   const listDetails = document.createElement('ul');
@@ -303,9 +306,12 @@ works.forEach((ppWork) => {
   ppDscrptnM.innerText = details.ppDscrptnM;
   ppDscrptnM.classList.add('pp-dscrptn', 'mobile');
   ppBtmBlock.appendChild(ppDscrptnM);
+  const ppBtmBlockDiv = document.createElement('div');
+  ppBtmBlockDiv.classList.add('pp-btm-right');
+  ppBtmBlock.appendChild(ppBtmBlockDiv);
   const tagsList = document.createElement('ul');
   tagsList.classList.add('pp-tags');
-  ppBtmBlock.appendChild(tagsList);
+  ppBtmBlockDiv.appendChild(tagsList);
   const lineTag1 = document.createElement('li');
   lineTag1.innerText = tags.html;
   tagsList.appendChild(lineTag1);
@@ -317,7 +323,7 @@ works.forEach((ppWork) => {
   tagsList.appendChild(lineTag3);
   const ppBtn = document.createElement('div');
   ppBtn.classList.add('pp-btns');
-  ppBtmBlock.appendChild(ppBtn);
+  ppBtmBlockDiv.appendChild(ppBtn);
   const button = document.createElement('button');
   button.innerText = 'See Live';
   button.setAttribute('class', `pp-btn btn-${ppWork.order}`);
@@ -337,3 +343,48 @@ works.forEach((ppWork) => {
   ppBtn.appendChild(button2);
   button2.appendChild(ppBtnImg2);
 });
+
+const appearPopUp0 = document.getElementById('id-0');
+const appearPopUp1 = document.getElementById('id-1');
+const appearPopUp2 = document.getElementById('id-2');
+const appearPopUp3 = document.getElementById('id-3');
+const disAppearPopUp = document.getElementById('pp-close-icon');
+
+function appearPopup0() {
+  const x = document.getElementById('pp-0');
+  x.style.display = 'block';
+  const y = document.getElementById('popup-window');
+  y.style.display = 'flex';
+}
+
+function appearPopup1() {
+  const x = document.getElementById('pp-1');
+  x.style.display = 'block';
+  const y = document.getElementById('popup-window');
+  y.style.display = 'flex';
+}
+
+function appearPopup2() {
+  const x = document.getElementById('pp-2');
+  x.style.display = 'block';
+  const y = document.getElementById('popup-window');
+  y.style.display = 'flex';
+}
+
+function appearPopup3() {
+  const x = document.getElementById('pp-3');
+  x.style.display = 'block';
+  const y = document.getElementById('popup-window');
+  y.style.display = 'flex';
+}
+
+function disappearPopup() {
+  const y = document.getElementById('popup-window');
+  y.style.display = 'none';
+}
+
+appearPopUp0.addEventListener('click', appearPopup0);
+appearPopUp1.addEventListener('click', appearPopup1);
+appearPopUp2.addEventListener('click', appearPopup2);
+appearPopUp3.addEventListener('click', appearPopup3);
+disAppearPopUp.addEventListener('click', disappearPopup);
