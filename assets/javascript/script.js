@@ -397,3 +397,19 @@ appearPopUp1.addEventListener('click', appearPopup1);
 appearPopUp2.addEventListener('click', appearPopup2);
 appearPopUp3.addEventListener('click', appearPopup3);
 disAppearPopUp.addEventListener('click', disappearPopup);
+
+/* The Email Validation */
+document.querySelector('.submit').addEventListener('click', (event) => {
+  const email = document.getElementById('mail').value;
+  const lowcaseError = document.querySelector('.lowcase-error');
+  const isLowerCase = (str) => str === str.toLowerCase();
+  if (!isLowerCase(email)) {
+    event.preventDefault();
+    lowcaseError.innerHTML = 'Please use lowercase letters and proper mail pattern';
+
+    // Hide error after 5 seconds.
+    setTimeout(() => {
+      lowcaseError.innerHTML = '';
+    }, 5000);
+  }
+});
