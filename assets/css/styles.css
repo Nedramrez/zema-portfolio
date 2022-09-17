@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,6 +9,15 @@
 body {
   background: #f7f7f9;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.body-noScroll {
+  overflow: hidden;
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 #nav-menu {
@@ -41,7 +52,7 @@ body {
 }
 
 .mobile-menu-div a {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 35px;
@@ -65,7 +76,6 @@ body {
 
 h1 {
   color: #6070ff;
-  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -89,7 +99,6 @@ h1 {
 
 .introduction h2 {
   color: #172b4d;
-  font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -98,7 +107,6 @@ h1 {
 
 article p {
   color: #344563;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -108,7 +116,6 @@ article p {
 
 .i-text {
   color: #344563;
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -118,7 +125,6 @@ article p {
 
 .i-h4 {
   color: #7f8cff;
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -153,7 +159,18 @@ article ul li {
   border-radius: 8px;
   color: #6070ff;
   margin: 0 8px 0 0;
-  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  height: 24px;
+  padding: 4px 12px;
+}
+
+.pp-tags li {
+  background: #ebebff;
+  border-radius: 8px;
+  color: #6070ff;
+  margin: 0 8px 0 0;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -183,7 +200,6 @@ article img {
 
 article h3 {
   color: #172b4d;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -199,7 +215,6 @@ article ul {
 
 article h5 {
   color: #344563;
-  font-family: "Poppins", sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 600;
@@ -212,7 +227,6 @@ article ul li img {
 
 article h6 {
   color: #7a869a;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -224,7 +238,6 @@ button {
   border: 1px solid #6070ff;
   border-radius: 8px;
   color: #396df2;
-  font-family: "Poppins", sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 500;
@@ -288,6 +301,10 @@ button:active {
   order: 3;
 }
 
+#pp-details {
+  display: none;
+}
+
 .about {
   background-image: none;
   border-radius: 0 60px 0 0;
@@ -312,7 +329,6 @@ button:active {
 
 .about-text {
   color: #344563;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 20px;
   line-height: 28px;
@@ -320,7 +336,7 @@ button:active {
 }
 
 .about-h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -345,7 +361,6 @@ button:active {
 
 .lang h5 {
   color: #000;
-  font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -361,7 +376,6 @@ button:active {
 
 .lang-list h6 {
   color: #253858;
-  font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -406,7 +420,7 @@ button:active {
 
 .container1 h2 {
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -416,7 +430,7 @@ button:active {
 
 .container1 p {
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -441,7 +455,7 @@ form input {
   border-radius: 8px;
   border: none;
   padding-inline: 13px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -455,12 +469,147 @@ form textarea {
   border: none;
   border-radius: 8px;
   padding: 13px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #b3bac5;
+}
+
+.v-d {
+  display: none;
+}
+
+.v-m {
+  display: block;
+}
+
+#popup-window {
+  display: none;
+}
+
+#pp-0 {
+  display: none;
+}
+
+#pp-1 {
+  display: none;
+}
+
+#pp-2 {
+  display: none;
+}
+
+#pp-3 {
+  display: none;
+}
+
+.pp-details {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.pp-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background-color: #fff;
+  z-index: 10;
+  width: 343px;
+  max-width: 91.5%;
+  overflow-y: scroll;
+}
+
+.pp-top-block {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: space-between;
+}
+
+.pp-close {
+  display: flex;
+  align-items: center;
+}
+
+.pp-close-icon {
+  height: 30px;
+}
+
+.pp-hdng {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 44px;
+  height: 40px;
+}
+
+.pp-ul {
+  display: flex;
+  list-style: none;
+  padding: 0 0 0 16px;
+  align-items: center;
+}
+
+.pp-ul h5 {
+  color: #344563;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.pp-ul li img {
+  padding: 0 6px;
+}
+
+.pp-ul h6 {
+  color: #7a869a;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.pp-img {
+  padding: 12px 16px;
+}
+
+.pp-dscrptn {
+  padding: 0 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.pp-tags {
+  display: flex;
+  list-style: none;
+  padding: 12px 16px;
+}
+
+.pp-btns {
+  display: flex;
+  padding: 0 16px;
+}
+
+.pp-btn {
+  display: flex;
+}
+
+.pp-btn-image {
+  padding-left: 5px;
 }
 
 @media screen and (min-width: 768px) {
@@ -475,7 +624,7 @@ form textarea {
   .nav-list {
     display: flex;
     list-style: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -622,6 +771,10 @@ form textarea {
     margin: 8.076% 4.06%;
   }
 
+  #pp-details {
+    display: none;
+  }
+
   .about div {
     border-radius: 0 7% 0 0;
     width: 100%;
@@ -654,7 +807,7 @@ form textarea {
   }
 
   .about-h4 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -741,5 +894,55 @@ form textarea {
     to {
       width: 0;
     }
+  }
+
+  .v-d {
+    display: block;
+  }
+
+  .v-m {
+    display: none;
+  }
+
+  .popup-window {
+    display: none;
+  }
+
+  .pp-container {
+    width: 80%;
+    max-height: 88%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: #fff;
+    z-index: 10;
+    overflow-y: scroll;
+  }
+
+  .pp-btn {
+    font-size: 15px;
+  }
+
+  .pp-img {
+    padding: 12px 16px;
+    width: 100%;
+  }
+
+  .pp-btm-block {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .pp-dscrptn {
+    font-size: 16px;
+    width: 60%;
+  }
+
+  .pp-btm-right {
+    width: 35%;
   }
 }
