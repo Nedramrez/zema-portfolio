@@ -406,5 +406,11 @@ document.querySelector('.submit').addEventListener('click', (event) => {
   if (!isLowerCase(email)) {
     event.preventDefault();
     lowcaseError.innerHTML = 'Please use lowercase letters and proper mail pattern';
+
+    // Hide error after 5 seconds.
+    setTimeout(() => {
+      lowcaseError.innerHTML = '';
+    }, 5000);
+
   }
 });
