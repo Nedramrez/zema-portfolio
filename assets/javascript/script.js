@@ -411,6 +411,5 @@ document.querySelector('.submit').addEventListener('click', (event) => {
     setTimeout(() => {
       lowcaseError.innerHTML = '';
     }, 5000);
-
   }
 });
