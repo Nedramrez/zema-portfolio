@@ -3,7 +3,10 @@ const disAppearMobileMenu = document.querySelector('.mobile-menu');
 const disAppearMobileMenuPortfolio = document.querySelector('.mobile-menu');
 const disAppearMobileMenuAbout = document.querySelector('.mobile-menu');
 const disAppearMobileMenuContact = document.querySelector('.mobile-menu');
+const body = document.querySelector('body');
 
+
+console.log(body)
 function mobileMenu() {
   const navMenuDelProp = document.getElementById('nav-menu');
   navMenuDelProp.style.display = 'none';
@@ -59,12 +62,12 @@ function mobileMenu() {
   appearMobileLink3.setAttribute('href', '#contact');
   appearMobileLink3.textContent = 'Contact';
   appearMobileLink1.setAttribute('onclick', 'disappearMobileMenuContact()');
-
   const MobileMenu = document.getElementById('id-for-js');
-  MobileMenu.style.display = 'block';
-}
+  MobileMenu.style.display = 'block'; 
 
-//  Script for 'hamburger' icon
+  body.classList.add('body-noScroll');
+
+}
 
 appearMobileMenu.addEventListener('click', mobileMenu);
 
@@ -75,6 +78,8 @@ function disappearMobileMenu() {
   removeMobileMenu.remove();
   const navMenuDelProp = document.getElementById('nav-menu');
   navMenuDelProp.style.display = 'flex';
+
+  body.classList.remove('body-noScroll');
 }
 
 function disappearMobileMenuPortfolio() {
@@ -388,3 +393,6 @@ appearPopUp1.addEventListener('click', appearPopup1);
 appearPopUp2.addEventListener('click', appearPopup2);
 appearPopUp3.addEventListener('click', appearPopup3);
 disAppearPopUp.addEventListener('click', disappearPopup);
+
+// Remove scroll when menu or popup window is shown
+

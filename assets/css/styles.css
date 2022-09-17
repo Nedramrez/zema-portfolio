@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,7 +9,11 @@
 body {
   background: #f7f7f9;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.body-noScroll {
+  overflow: hidden;
 }
 
 .invisible {
@@ -46,7 +52,7 @@ body {
 }
 
 .mobile-menu-div a {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 35px;
@@ -285,7 +291,7 @@ button:active {
 
 #pp-details {
   display: none;
-} 
+}
 
 .about {
   background-image: none;
@@ -318,7 +324,7 @@ button:active {
 }
 
 .about-h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -402,7 +408,7 @@ button:active {
 
 .container1 h2 {
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -412,7 +418,7 @@ button:active {
 
 .container1 p {
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -437,7 +443,7 @@ form input {
   border-radius: 8px;
   border: none;
   padding-inline: 13px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -451,7 +457,7 @@ form textarea {
   border: none;
   border-radius: 8px;
   padding: 13px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -487,7 +493,6 @@ form textarea {
   display: none;
 }
 
-
 .pp-details {
   position: fixed;
   top: 0;
@@ -510,7 +515,8 @@ form textarea {
   background-color: #fff;
   z-index: 10;
   width: 343px;
-  max-width: 91,5%;
+  /* height: 95%; */
+  max-width: 91, 5%;
   overflow-y: scroll;
 }
 
@@ -596,7 +602,7 @@ form textarea {
 
 .pp-btns {
   display: flex;
-  padding: 0 16px;  
+  padding: 0 16px;
 }
 
 .pp-btn {
@@ -619,7 +625,7 @@ form textarea {
   .nav-list {
     display: flex;
     list-style: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -768,7 +774,7 @@ form textarea {
 
   #pp-details {
     display: none;
-  } 
+  }
 
   .about div {
     border-radius: 0 7% 0 0;
@@ -802,7 +808,7 @@ form textarea {
   }
 
   .about-h4 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -923,8 +929,8 @@ form textarea {
   }
 
   .pp-img {
-  padding: 12px 16px;
-  width: 100%;
+    padding: 12px 16px;
+    width: 100%;
   }
 
   .pp-btm-block {
@@ -934,10 +940,10 @@ form textarea {
 
   .pp-dscrptn {
     font-size: 16px;
-    width: 60%
+    width: 60%;
   }
 
   .pp-btm-right {
-    width:35%
+    width: 35%;
   }
 }
