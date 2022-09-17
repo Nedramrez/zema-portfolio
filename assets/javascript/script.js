@@ -382,6 +382,14 @@ function appearPopup3() {
 function disappearPopup() {
   const y = document.getElementById('popup-window');
   y.style.display = 'none';
+  const x = document.getElementById('pp-0');
+  const z = document.getElementById('pp-1');
+  const w = document.getElementById('pp-2');
+  const v = document.getElementById('pp-3');
+  x.style.display = 'none';
+  z.style.display = 'none';
+  w.style.display = 'none';
+  v.style.display = 'none';
 }
 
 appearPopUp0.addEventListener('click', appearPopup0);
